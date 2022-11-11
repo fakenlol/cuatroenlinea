@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace cuatroenlinea;
 
 interface InterfazFicha {
     public function saberColor() : string;
@@ -8,9 +8,9 @@ interface InterfazFicha {
 
 class Ficha implements InterfazFicha {
 
-    protected $color;
+    public $color;
 
-    public function _construct($colorNuevo) {
+    public function __construct(string $colorNuevo) {
         $this->color = $colorNuevo;
     }
 
