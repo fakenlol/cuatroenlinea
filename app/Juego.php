@@ -1,6 +1,6 @@
 <?php
 
-namespace cuatroenlinea;
+namespace app;
 
 class Juego {
     
