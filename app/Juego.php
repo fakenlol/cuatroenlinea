@@ -26,7 +26,6 @@ class Juego {
                 return 0;
             }
         }
-        //VERIFICAR SI LUEGO ESTO HABRIA QUE SACARLO O RETORNAR EL TEXTO PARA ALGUN POPUP
         ($this->fichas_vacias == 0) ? print "Se han quedado sin turnos.\n" :"";
     }
 
