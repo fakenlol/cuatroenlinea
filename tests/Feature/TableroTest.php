@@ -49,4 +49,26 @@ class TableroTest extends TestCase
         $this->assertTrue($new_tablero[2][2] == "🌕");
         $this->assertTrue($new_tablero[3][3] == "🌕");
     }
+    /** @test */
+    public function reinicio()
+    {
+        $tablero = new Tablero();
+
+        $tablero->arrojar(1,"🌕");
+        $tablero->arrojar(2,"🌎");
+        $tablero->arrojar(1,"🌕");
+        $tablero->arrojar(3,"🌎");
+        $tablero->arrojar(2,"🌕");
+        $tablero->arrojar(3,"🌎");
+        $tablero->arrojar(3,"🌕");
+        $tablero->arrojar(4,"🌎");
+        $tablero->arrojar(4,"🌕");
+        $tablero->arrojar(4,"🌎");
+        $tablero->arrojar(4,"🌕");
+
+        $tablero->reinicio();
+        $empty_tablero = $tablero->devolverTablero();
+
+        $this->assertTrue($empty_tablero == array());
+    }
 }

@@ -48,6 +48,6 @@ class Tablero {
     }
 
     public function reinicio() {
-        $this->fichas = array();
+        return $this->fichas = array();
     }
 }
