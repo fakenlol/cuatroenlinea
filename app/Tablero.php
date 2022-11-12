@@ -1,7 +1,6 @@
 <?php
 
 namespace app;
-include "Ficha.php";
 
 class Tablero {
 

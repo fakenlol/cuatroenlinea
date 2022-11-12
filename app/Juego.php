@@ -1,7 +1,9 @@
 <?php
 
 namespace app;
+include "Tablero.php";
 
+//$juego = new Juego("Hernan","Claudio");
 class Juego {
     
     public $jugador1,$jugador2;
