@@ -25,8 +25,6 @@ class Tablero {
     }
 
     public function verTablero() {
-        //SACAR LUEGO CUANDO SE ESTE TRATANDO CON EL CODIGO FINAL
-        print("1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣ 7️⃣\n");
         for ($i=5; $i >= 0; $i--) { 
             for ($j=0; $j <= 6; $j++) { 
                 echo $this->fichas[$i][$j];
